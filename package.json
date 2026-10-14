@@ -1,0 +1,39 @@
+{
+  "name": "uppy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Uppy business performance platform",
+  "scripts": {
+    "build": "npm run build:backend && npm run build:web",
+    "build:backend": "tsc --noEmit",
+    "build:web": "tsc --noEmit -p frontend/tsconfig.json && vite build frontend --config frontend/vite.config.mts",
+    "test": "tsx --test backend/test/event-contract.test.ts backend/test/configuration.test.ts backend/test/company-admin.test.ts backend/test/organization.test.ts backend/test/performance.test.ts backend/test/executive.test.ts backend/test/target-scope.test.ts backend/test/billing.test.ts frontend/test/combined-analysis.test.ts",
+    "synth": "cdk synth",
+    "provision:company-admin": "tsx backend/scripts/provision-company-admin.ts",
+    "provision:executive": "tsx backend/scripts/provision-uppy-executive.ts",
+    "dev:web": "vite frontend --config frontend/vite.config.mts"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "aws-cdk": "^2.170.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "^6.15.7",
+    "@aws-sdk/client-cognito-identity-provider": "^3.1150.0",
+    "@aws-sdk/client-dynamodb": "^3.699.0",
+    "@aws-sdk/client-secrets-manager": "^3.699.0",
+    "@aws-sdk/lib-dynamodb": "^3.699.0",
+    "aws-amplify": "^6.22.1",
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

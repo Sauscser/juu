@@ -1,0 +1,32 @@
+Kenya ADM1 - Counties (2020 representation)
+Source: geoBoundaries, RCMRD GeoPortal / Africa GeoPortal
+Dataset metadata: https://www.geoboundaries.org/api/current/gbOpen/KEN/ADM1/
+Release: https://github.com/wmgeolab/geoBoundaries/tree/9469f09
+License: Public Domain
+Bundled simplified GeoJSON: kenya-adm1.geojson
+
+Kenya ADM2 - Sub-Counties (2020 representation)
+Source: geoBoundaries, IEBC / OCHA ROSEA
+Dataset metadata: https://www.geoboundaries.org/api/current/gbOpen/KEN/ADM2/
+Release: https://github.com/wmgeolab/geoBoundaries/tree/9469f09
+License: Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)
+Bundled simplified GeoJSON: kenya-adm2.geojson
+
+Global country outlines
+Source: Natural Earth, 1:110m Cultural Vectors, Admin 0 - Countries
+Source data: https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/
+Repository: https://github.com/nvkelso/natural-earth-vector
+License: Public domain
+Bundled GeoJSON: world-countries.geojson
+
+Country administrative boundaries loaded on demand
+Source: geoBoundaries geoBoundaries Open data API
+Availability metadata:
+https://www.geoboundaries.org/api/current/gbOpen/{ISO3}/ALL/
+Selected-level metadata:
+https://www.geoboundaries.org/api/current/gbOpen/{ISO3}/{ADM}/
+Geometry is retrieved from the CORS-enabled GitHub media host referenced by
+the selected-level metadata. Country and administrative-level availability
+varies. Each level's canonical administrative name and license are shown in
+the picker. Geometry is fetched only after the user selects a level; no paid
+map service or application-side proxy is used.
